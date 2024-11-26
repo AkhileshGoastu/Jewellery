@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Bootstrap Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    marquee {
+      background-color: gold;
+      line-height: 40px;
+      padding: 0%;
+    }
+
+    h1 {
+      font-size: 300%;
+      color: rgb(3, 1, 13);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    /* nav{
+          display: flex;
+          justify-content: space-evenly;
+          background-color: rgb(92, 3, 49);
+          padding: 0.5%;
+          font-size: 25px;
+
+        } */
+    a:hover {
+      color: red
+    }
+
+    .section2 {
+      margin-top: 6px;
+    }
+
+    header {
+      background-color: rgb(92, 3, 49);
+      color: antiquewhite;
+      text-align: center;
+      /* display: flex;
+      justify-content: space-evenly; */
+    }
+
+    #p {
+      color: antiquewhite;
+      display: flex;
+      justify-content: center;
+    }
+    li{
+      margin-left: 150px;
+      justify-content: center;
+    }
+    /* ul{
+      justify-content: center;
+    } */
+  </style>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <marquee behavior="" direction="right">
+    <h1 align="center">CHANDRASHEKHAR JEWELLERS</h1>
+  </marquee>
+  <div>
+    <header>
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" id="p" href="index.HTML" style="margin-left: 150px;">Home</a>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="navbar-brand" aria-current="page" href="GOLD.HTML">Gold</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="SILVER.HTML">Silver</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="navbar-brand" id="p" href="GOLD.HTML" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Gold
+                </a>
+                <ul class="dropdown-menu">
+                  <a class="dropdown-item" href="MEN_GOLD.HTML">Mens</a></li>
+                  <a class="dropdown-item" href="WOMEN_GOLD.HTML">Womens</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="navbar-brand" id="p" href="SILVER.HTML" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Silver
+                </a>
+                <ul class="dropdown-menu">
+                  <a class="dropdown-item" href="MEN_SILVER.HTML">Mens</a>
+                  <a class="dropdown-item" href="WOMEN_SILVER.HTML">Womens</a>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" id="p" aria-current="page" href="Contact Us.html">Contact Us</a>
+              </li>
+              <a class="btn btn-primary " href="LOGIN.html" role="button" style="margin-left: 300px; width: 100px;">Login</a>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="section2">
+    <div class="carousel container slide" id="carouselDemo" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img width="100%" height="650px" src="image.png" alt="">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img width="100%" height="650px"
+            src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-90498,resizemode-75,msid-109873223/wealth/spend/gold-jewellery-cost-calculation-how-jewellers-calculate-price-of-gold-jewellery.jpg"
+            alt="">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img width="100%" height="650px"
+            src="https://www.wallpaperflare.com/static/226/600/923/gold-metal-gold-bar-bars-wallpaper.jpg" alt="">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img width="100%" height="650px"
+            src="https://media.istockphoto.com/id/468068368/photo/stack-of-shiny-silver-bars-inside-a-bank-vault.jpg?s=612x612&w=0&k=20&c=Ih6RWZBoJL_zPABbjHV1aJ2EZpcrliruDDGpr3G9y0Q="
+            alt="">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <div class="carousel-indicators">
+        <button type="button" class="active" data-bs-target="#carouselDemo" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="3"></button>
+      </div>
+
+    </div>
+  </div>
+ 
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-3 mb-3">
+          <h5 class="text-uppercase">About Us</h5>
+          <p>Discover exquisite gold jewelry crafted with precision and passion. Your trusted partner in timeless elegance.</p>
+        </div>
+        <!-- Customer Service -->
+        <div class="col-md-3 mb-3">
+          <h5 class="text-uppercase">Customer Service</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Shipping & Returns</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Care Instructions</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-3">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">New Arrivals</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Best Sellers</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Gift Cards</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Track Order</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter & Social Media -->
+        <div class="col-md-3 mb-3">
+          <h5 class="text-uppercase">Stay Connected</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+            </div>
+            <button type="submit" class="btn btn-outline-light btn-sm">Subscribe</button>
+          </form>
+          <div class="mt-3">
+            <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="text-center border-top pt-3 mt-3">
+        <p class="mb-0">© 2024 Gold Jewel Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Include Bootstrap CSS and Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+</body>
+</html>
